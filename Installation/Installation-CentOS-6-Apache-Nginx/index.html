@@ -2108,8 +2108,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gneral" class="md-nav__link">
-    Gneral
+  <a href="#general" class="md-nav__link">
+    General
   </a>
   
 </li>
@@ -2137,7 +2137,7 @@ are not, prepend <code>sudo</code> to the shell commands (the ones that aren't
 at <code>mysql&gt;</code> prompts) or temporarily become a user with root
 privileges with <code>sudo -s</code> or <code>sudo -i</code>.</p>
 </blockquote>
-<p><strong>Please note the minimum supported PHP version is 7.2.5</strong></p>
+<p><strong>Please note the minimum supported PHP version is 7.3</strong></p>
 <h1 id="on-the-db-server">On the DB Server</h1>
 <p>This host is where the MySQL database runs.  It could be the same
 machine as your network management server (this is the most common
@@ -2158,7 +2158,7 @@ service mysqld start
 chkconfig mariadb on
 service mariadb start
 </code></pre></div>
-<h2 id="gneral">Gneral</h2>
+<h2 id="general">General</h2>
 <p>Now continue with the installation:</p>
 <div class="highlight"><pre><span></span><code>chkconfig snmpd on
 service snmpd start
@@ -2329,7 +2329,7 @@ directory as well as create an Apache vhost.</p>
 chown -R librenms:librenms /opt/librenms
 chmod <span class="m">775</span> rrd
 </code></pre></div>
-<p>If you're planing on running rrdcached, make sure that the path is
+<p>If you're planning on running rrdcached, make sure that the path is
 also chmod'ed to 775 and chown'ed to librenms:librenms.</p>
 <p><strong>SELinux</strong></p>
 <blockquote>

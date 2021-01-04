@@ -3247,10 +3247,10 @@ or the path where your pure-ftpwho is located</p>
    -O /etc/snmp/raspberry.sh</code></p>
 <p>2: Make the script executable: <code>chmod +x /etc/snmp/raspberry.sh</code></p>
 <p>3: Edit your snmpd.conf file (usually <code>/etc/snmp/snmpd.conf</code>) and add:</p>
-<div class="highlight"><pre><span></span><code>extend raspberry sudo /etc/snmp/raspberry.sh
+<div class="highlight"><pre><span></span><code>extend raspberry /usr/bin/sudo /bin/sh /etc/snmp/raspberry.sh
 </code></pre></div>
 <p>4: Edit your sudo users (usually <code>visudo</code>) and add at the bottom:</p>
-<div class="highlight"><pre><span></span><code>snmp ALL=(ALL) NOPASSWD: /etc/snmp/raspberry.sh, /usr/bin/vcgencmd
+<div class="highlight"><pre><span></span><code>snmp ALL=(ALL) NOPASSWD: /bin/sh /etc/snmp/raspberry.sh
 </code></pre></div>
 <p><strong>Note:</strong> If you are using Raspian, the default user is
 <code>Debian-snmp</code>. Change <code>snmp</code> above to <code>Debian-snmp</code>. You can verify
